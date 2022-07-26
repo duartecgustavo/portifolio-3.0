@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Poppins:wght@100;300;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* SCROOLBAR */
+body::-webkit-scrollbar {
+  background-color: #7d50f9;
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #818181;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
