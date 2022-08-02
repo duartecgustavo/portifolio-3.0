@@ -2,6 +2,13 @@ import styled from "styled-components";
 import { ReactComponent as IconChangeLanguage } from "assets/icons/icon_change_language.svg";
 import { ReactComponent as IconDarkMode } from "assets/icons/icon_dark_mode.svg";
 
+export const BackContainer = styled.div`
+  height: 80px;
+  width: 100vw;
+  position: fixed;
+  left: 0px;
+  z-index: 15;
+`;
 export const Container = styled.div`
   display: flex;
   align-items: center;
@@ -9,9 +16,10 @@ export const Container = styled.div`
 
   gap: 8px;
   position: fixed;
-  top: 20px;
+  top: 0px;
+  z-index: 20;
 
-  height: 50px;
+  height: 80px;
 
   left: 0;
   right: 0;

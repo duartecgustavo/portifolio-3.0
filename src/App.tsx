@@ -1,6 +1,7 @@
-import Footer from "components/molecules/footer/index";
+import Footer from "components/organisms/footer/index";
 import HelpBar from "components/molecules/help_bar/intex";
 import Profile from "components/organisms/profile/index";
+import Projects from "components/organisms/projects/index";
 import { Fragment } from "react";
 import { Background } from "styles/global";
 import "styles/global.css";
@@ -13,6 +14,7 @@ function App() {
         <div className="col-10">
           <HelpBar />
           <Profile />
+          <Projects />
         </div>
       </div>
       <Footer />

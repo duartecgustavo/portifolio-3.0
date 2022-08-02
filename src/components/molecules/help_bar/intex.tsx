@@ -1,18 +1,17 @@
 import React from "react";
-import { Container } from "./styles";
+import { Container, BackContainer } from "./styles";
 import { ChangeLanguage, DarkMode } from "./styles";
 import Button from "../../atoms/button/index";
 
 const HelpBar = () => {
+  window.addEventListener("scroll", () => {
+    const header: any = document.querySelector(".header-top");
+    header.classList.toggle("scroll-active", window.scrollY > 90);
+  });
   return (
     <>
-      <div
-        style={{
-          height: "70px",
-          width: "100%",
-          left: "0px",
-        }}
-      ></div>
+      <BackContainer className="header-top" />
+      <div style={{ height: "80px" }}></div>
       <Container className="container d-flex justify-content-center">
         <div className="col-10 d-flex justify-content-between">
           {/* <BotaoSobre color="#7D50F9" fontSize="22px" className="mb-0 hover">
