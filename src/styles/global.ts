@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Content = styled.div`
+export const Background = styled.div`
   background: rgb(16, 12, 34);
   background: radial-gradient(
     circle,

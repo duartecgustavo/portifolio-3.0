@@ -1,21 +1,21 @@
-import React, { Fragment } from "react";
-import { Content } from "styles/global";
+import Footer from "components/molecules/footer/index";
+import HelpBar from "components/molecules/help_bar/intex";
+import Profile from "components/organisms/profile/index";
+import { Fragment } from "react";
+import { Background } from "styles/global";
 import "styles/global.css";
 
 function App() {
   return (
     <Fragment>
-      <Content />
-      <div className="container">
-        <button type="button" className="btn btn-primary">
-          TESTESTES
-        </button>
-        <p className="text-light">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis itaque
-          ab magnam, officia repellat doloremque quos perspiciatis porro
-          tempora, aliquam quibusdam magni rerum quam nihil quae tempore
-        </p>
+      <Background />
+      <div className="container d-flex justify-content-center">
+        <div className="col-10">
+          <HelpBar />
+          <Profile />
+        </div>
       </div>
+      <Footer />
     </Fragment>
   );
 }
