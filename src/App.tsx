@@ -1,5 +1,5 @@
 import Footer from "components/organisms/footer/index";
-import HelpBar from "components/molecules/help_bar/intex";
+import HelpBar from "components/organisms/help_bar/index";
 import Profile from "components/organisms/profile/index";
 import Projects from "components/organisms/projects/index";
 import { Fragment } from "react";

@@ -15,8 +15,7 @@ export const VerticalDivisor = styled.div<IDivisoeProps>`
 `;
 
 export const HorizontalDivisor = styled.div<IDivisoeProps>`
-  background: ${(props: any) =>
-    props.background ? props.background : "#7D50F9"};
+  background: ${(props) => (props.background ? props.background : "#7D50F9")};
   height: 8px;
   width: 20%;
   border-radius: 4px;

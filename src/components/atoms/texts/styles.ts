@@ -11,13 +11,12 @@ interface ITextProps {
 }
 
 export const TextPurple = styled.p<ITextProps>`
-  width: ${(props: any) => (props.width ? props.width : "default")};
-  font-weight: ${(props: any) => (props.fontWeight ? props.fontWeight : "300")};
-  font-size: ${(props: any) => (props.fontSize ? props.fontSize : "16px")};
-  line-height: ${(props: any) =>
-    props.lineHeight ? props.lineHeight : "normal"};
+  width: ${(props) => (props.width ? props.width : "default")};
+  font-weight: ${(props) => (props.fontWeight ? props.fontWeight : "300")};
+  font-size: ${(props) => (props.fontSize ? props.fontSize : "16px")};
+  line-height: ${(props) => (props.lineHeight ? props.lineHeight : "normal")};
 
-  color: ${(props: any) => (props.color ? props.color : "#7D50F9")};
+  color: ${(props) => (props.color ? props.color : "#7D50F9")};
   background: none;
   border: none;
 
@@ -28,13 +27,12 @@ export const TextPurple = styled.p<ITextProps>`
 `;
 
 export const TextMain = styled.p<ITextProps>`
-  font-weight: ${(props: any) => (props.fontWeight ? props.fontWeight : "300")};
-  font-size: ${(props: any) => (props.fontSize ? props.fontSize : "16px")};
-  line-height: ${(props: any) =>
-    props.lineHeight ? props.lineHeight : "normal"};
+  font-weight: ${(props) => (props.fontWeight ? props.fontWeight : "300")};
+  font-size: ${(props) => (props.fontSize ? props.fontSize : "16px")};
+  line-height: ${(props) => (props.lineHeight ? props.lineHeight : "normal")};
   text-align: justify;
 
   display: flex;
-  color: ${(props: any) => (props.color ? props.color : "#C7C7C7")};
+  color: ${(props) => (props.color ? props.color : "#C7C7C7")};
   background: none;
 `;

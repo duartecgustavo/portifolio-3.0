@@ -2,6 +2,7 @@ import React from "react";
 import { Container, BackContainer } from "./styles";
 import { ChangeLanguage, DarkMode } from "./styles";
 import Button from "../../atoms/button/index";
+import { QueryByRole } from "@testing-library/react";
 
 const HelpBar = () => {
   window.addEventListener("scroll", () => {

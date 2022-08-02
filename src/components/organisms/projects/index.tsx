@@ -1,5 +1,6 @@
 import React from "react";
-import { ContainerProjects, ContainerEachProject, BoxProject } from "./styles";
+import { ContainerProjects, ContainerEachProject } from "./styles";
+import CardProject from "components/molecules/card_project/index";
 import bgp1 from "../../../assets/bgProjects/bgp1.gif";
 import bgp2 from "../../../assets/bgProjects/bgp2.gif";
 import bgp3 from "../../../assets/bgProjects/bgp3.gif";
@@ -13,49 +14,14 @@ const Projects = () => {
       <ContainerProjects className="col-12 col-lg-12">
         <div className="row">
           <ContainerEachProject className="col-12 col-lg-6">
-            <BoxProject height="350px" id="container">
-              <div className="item-zoom">
-                <div className="item-bluur" />
-                <img src={bgp1} />
-              </div>
-            </BoxProject>
-            <BoxProject height="300px">
-              <div className="item-zoom">
-                <div className="item-bluur" />
-
-                <img src={bgp2} />
-              </div>
-            </BoxProject>
-            <BoxProject height="350px">
-              <div className="item-zoom">
-                <div className="item-bluur" />
-
-                <img src={bgp3} />
-              </div>
-            </BoxProject>
+            <CardProject height="350px" bpg={bgp1} />
+            <CardProject height="300px" bpg={bgp2} />
+            <CardProject height="350px" bpg={bgp3} />
           </ContainerEachProject>
           <ContainerEachProject className="col-12 col-lg-6">
-            <BoxProject height="300px">
-              <div className="item-zoom">
-                <div className="item-bluur" />
-
-                <img src={bgp4} />
-              </div>
-            </BoxProject>
-            <BoxProject height="400px">
-              <div className="item-zoom">
-                <div className="item-bluur" />
-
-                <img src={bgp5} />
-              </div>
-            </BoxProject>
-            <BoxProject height="300px">
-              <div className="item-zoom">
-                <div className="item-bluur" />
-
-                <img src={bgp6} />
-              </div>
-            </BoxProject>
+            <CardProject height="300px" bpg={bgp4} />
+            <CardProject height="400px" bpg={bgp5} />
+            <CardProject height="300px" bpg={bgp6} />
           </ContainerEachProject>
         </div>
       </ContainerProjects>
