@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Poppins:wght@100;300;500;600&display=swap");
 
+/* INICIO CONFIGURAÇÕES GLOBAIS */
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +9,9 @@
   scroll-behavior: smooth;
   margin-bottom: 0px !important;
 }
+/* FIM CONFIGURAÇÕES GLOBAIS */
 
-/* SCROOLBAR */
+/* INICIO SCROOLBAR */
 body::-webkit-scrollbar {
   background-color: #7d50f9;
   width: 8px;
@@ -23,7 +25,9 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   border-radius: 5px;
 }
+/* FIM SCROOLBAR */
 
+/* INICIO ESTILO CARD PROJETO */
 .item-zoom {
   position: relative;
   overflow: hidden;
@@ -53,7 +57,7 @@ body::-webkit-scrollbar-track {
   transform: scale(1.1);
 }
 
-.item-bluur {
+.item-efeito {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -63,11 +67,12 @@ body::-webkit-scrollbar-track {
   transition: left 0.5s;
 }
 
-.item-zoom:hover .item-bluur {
+.item-zoom:hover .item-efeito {
   z-index: 10;
   left: 0%;
   background: rgba(0, 0, 0, 0.5);
 }
+/* FIM ESTILO CARD PROJETO */
 
 .scroll-active {
   position: fixed;

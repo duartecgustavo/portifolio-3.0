@@ -1,4 +1,4 @@
-import Button from "../../atoms/button/index";
+import BoxLink from "components/molecules/box_link/index";
 import { HorizontalDivisor } from "../../atoms/divisors/styles";
 import { TextMain, TextPurple } from "../../atoms/texts/styles";
 import {
@@ -11,6 +11,7 @@ import {
   Download,
   TextImage,
 } from "./styles";
+import CvPdf from "../../../files/CV_Gustavo_Castanho_Duarte.pdf";
 
 const Profile = () => {
   return (
@@ -59,19 +60,27 @@ const Profile = () => {
                 </TextMain>
               </div>
               <div className="d-flex justify-content-between align-items-center">
-                <button className="bg-transparent" style={{ border: "none" }}>
+                <a
+                  href={CvPdf}
+                  download="CV_Gustavo_Castanho_Duarte"
+                  className="bg-transparent"
+                  style={{ border: "none", cursor: "pointer" }}
+                >
                   <Download />
-                </button>
+                </a>
                 <div className="d-flex gap-2">
-                  <button className="bg-transparent" style={{ border: "none" }}>
-                    <Email />
-                  </button>
-                  <button className="bg-transparent" style={{ border: "none" }}>
-                    <Github />
-                  </button>
-                  <button className="bg-transparent" style={{ border: "none" }}>
-                    <Linkedin />
-                  </button>
+                  <BoxLink
+                    icon={<Email />}
+                    path="mailto:duartecgustavo@outlook.com"
+                  />
+                  <BoxLink
+                    icon={<Github />}
+                    path="https://github.com/duartecgustavo"
+                  />
+                  <BoxLink
+                    icon={<Linkedin />}
+                    path="https://www.linkedin.com/in/gustavo-castanho-duarte-578127160/"
+                  />
                 </div>
               </div>
             </div>

@@ -11,7 +11,7 @@ const CardProject = ({ bpg, height }: ICarProject) => {
     <>
       <BoxProject height={height} id="container">
         <div className="item-zoom">
-          <div className="item-bluur" />
+          <div className="item-efeito" />
           <img src={bpg} />
         </div>
       </BoxProject>

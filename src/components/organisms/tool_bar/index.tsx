@@ -2,9 +2,9 @@ import React from "react";
 import { Container, BackContainer } from "./styles";
 import { ChangeLanguage, DarkMode } from "./styles";
 import Button from "../../atoms/button/index";
-import { QueryByRole } from "@testing-library/react";
+import CvPdf from "../../../files/CV_Gustavo_Castanho_Duarte.pdf";
 
-const HelpBar = () => {
+const ToolBar = () => {
   window.addEventListener("scroll", () => {
     const header: any = document.querySelector(".header-top");
     header.classList.toggle("scroll-active", window.scrollY > 90);
@@ -15,11 +15,10 @@ const HelpBar = () => {
       <div style={{ height: "80px" }}></div>
       <Container className="container d-flex justify-content-center">
         <div className="col-10 d-flex justify-content-between">
-          {/* <BotaoSobre color="#7D50F9" fontSize="22px" className="mb-0 hover">
-            SOBRE
-          </BotaoSobre> */}
           <div className="d-flex gap-2">
-            <Button text="CURRICULO" />
+            <a href={CvPdf} download="CV_Gustavo_Castanho_Duarte">
+              <Button text="CURRICULO" />
+            </a>
             <Button text="SOBRE" />
           </div>
 
@@ -37,4 +36,4 @@ const HelpBar = () => {
   );
 };
 
-export default HelpBar;
+export default ToolBar;
