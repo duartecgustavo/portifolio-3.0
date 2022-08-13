@@ -2,6 +2,7 @@ import Footer from "components/organisms/footer/index";
 import ToolBar from "components/organisms/tool_bar/index";
 import Profile from "components/organisms/profile/index";
 import Projects from "components/organisms/projects/index";
+import Ability from "components/organisms/ability/index";
 import { Fragment } from "react";
 import { Background } from "styles/global";
 
@@ -14,6 +15,7 @@ function App() {
           <ToolBar />
           <Profile />
           <Projects />
+          <Ability />
         </div>
       </div>
       <Footer />

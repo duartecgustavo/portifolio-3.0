@@ -1,20 +1,22 @@
 import styled from "styled-components";
 import { ReactComponent as IconArrowDown } from "assets/icons/icon_arrow_down.svg";
+import { Pallete } from "components/utils/colors/colors";
+const colors = Pallete();
 
 export const ContainerButton = styled.button`
   display: flex;
   align-items: center;
   font-weight: bold;
   font-size: 14px;
-  border: 3px solid #303033;
+  border: 3px solid ${colors.dm_black};
   border-radius: 4px;
   padding: 4px 10px;
   background-color: transparent;
-  color: #7d50f9;
+  color: ${colors.dm_purple};
 
   &:hover {
-    border: 3px solid #7d50f9;
-    stroke: 2px 2px #fff;
+    border: 3px solid ${colors.dm_purple};
+    stroke: 2px 2px ${colors.dm_white};
   }
 `;
 
@@ -22,9 +24,10 @@ export const SetaBaixo = styled(IconArrowDown)`
   width: 20px;
   height: 20px;
   margin-left: 4px;
-  color: #303033;
+  color: ${colors.dm_black};
   &:hover {
-    color: #7d50f9;
-    stroke: 2px 2px #fff;
+    color: ${colors.dm_purple};
+
+    stroke: 2px 2px ${colors.dm_white};
   }
 `;

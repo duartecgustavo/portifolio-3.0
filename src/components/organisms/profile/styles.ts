@@ -1,9 +1,12 @@
 import styled from "styled-components";
-import me from "../../../assets/Me.png";
+import { ReactComponent as IconDownload } from "assets/icons/icon_download.svg";
+import { ReactComponent as IconEmail } from "assets/icons/icon_email.svg";
 import { ReactComponent as IconGithub } from "assets/icons/icon_github.svg";
 import { ReactComponent as IconLinkedin } from "assets/icons/icon_linkedin.svg";
-import { ReactComponent as IconEmail } from "assets/icons/icon_email.svg";
-import { ReactComponent as IconDownload } from "assets/icons/icon_download.svg";
+import me from "../../../assets/Me.png";
+
+import { Pallete } from "components/utils/colors/colors";
+const colors = Pallete();
 
 export const ContainerPicture = styled.div`
   position: relative;
@@ -13,16 +16,27 @@ export const ContainerInfos = styled.div`
   align-items: center;
 `;
 
-export const TextImage = styled.h1`
+export const TextImageDark = styled.h1`
   position: absolute;
-  bottom: -30px;
-  right: -30px;
+  bottom: -20px;
+  right: -20px;
 
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
   text-align: end;
-  color: #c7c7c7;
-  text-shadow: 2px 2px 2px #7d50f9;
+  color: ${colors.dm_gray};
+  text-shadow: 2px 2px 2px ${colors.dm_purple};
+`;
+export const TextImageWhite = styled.h1`
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+
+  font-size: 50px;
+  font-weight: bold;
+  text-align: end;
+  color: ${colors.dm_purple};
+  text-shadow: 2px 2px 2px ${colors.dm_black};
 `;
 
 export const ImageMe = styled.img.attrs({
@@ -35,37 +49,37 @@ export const ImageMe = styled.img.attrs({
 export const Github = styled(IconGithub)`
   width: 30px;
   height: 30px;
-  color: #303033;
+  color: ${colors.dm_black};
   &:hover {
-    color: #7d50f9;
-    stroke: 2px 2px #fff;
+    color: ${colors.dm_purple};
+    stroke: 2px 2px ${colors.dm_white};
   }
 `;
 
 export const Linkedin = styled(IconLinkedin)`
   width: 30px;
   height: 30px;
-  color: #303033;
+  color: ${colors.dm_black};
   &:hover {
-    color: #7d50f9;
-    stroke: 2px 2px #fff;
+    color: ${colors.dm_purple};
+    stroke: 2px 2px ${colors.dm_white};
   }
 `;
 export const Email = styled(IconEmail)`
   width: 30px;
   height: 30px;
-  color: #303033;
+  color: ${colors.dm_black};
   &:hover {
-    color: #7d50f9;
-    stroke: 2px 2px #7d50f9;
+    color: ${colors.dm_purple};
+    stroke: 2px 2px ${colors.dm_purple};
   }
 `;
 export const Download = styled(IconDownload)`
   width: 30px;
   height: 30px;
-  color: #303033;
+  color: ${colors.dm_black};
   &:hover {
-    color: #7d50f9;
-    stroke: 2px 2px #7d50f9;
+    color: ${colors.dm_purple};
+    stroke: 2px 2px ${colors.dm_purple};
   }
 `;

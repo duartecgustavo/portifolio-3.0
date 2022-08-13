@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Pallete } from "components/utils/colors/colors";
+const colors = Pallete();
 
 export const ContainerFooter = styled.div`
   display: flex;
@@ -8,5 +10,5 @@ export const ContainerFooter = styled.div`
   height: 60px;
 
   gap: 4px;
-  background: rgba(125, 80, 249, 0.05);
+  background: ${colors.dm_footer};
 `;

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { ReactComponent as IconChangeLanguage } from "assets/icons/icon_change_language.svg";
 import { ReactComponent as IconDarkMode } from "assets/icons/icon_dark_mode.svg";
+import { Pallete } from "components/utils/colors/colors";
+const colors = Pallete();
 
 export const BackContainer = styled.div`
   height: 80px;
@@ -28,19 +30,19 @@ export const Container = styled.div`
 export const ChangeLanguage = styled(IconChangeLanguage)`
   width: 28px;
   height: 28px;
-  color: #303033;
+  color: ${colors.dm_black};
   &:hover {
-    color: #7d50f9;
-    stroke: 2px 2px #fff;
+    color: ${colors.dm_purple};
+    stroke: 2px 2px ${colors.dm_white};
   }
 `;
 
 export const DarkMode = styled(IconDarkMode)`
   width: 30px;
   height: 30px;
-  color: #303033;
+  color: ${colors.dm_black};
   &:hover {
-    color: #7d50f9;
-    stroke: 2px 2px #fff;
+    color: ${colors.dm_purple};
+    stroke: 2px 2px ${colors.dm_white};
   }
 `;

@@ -7,10 +7,12 @@ import bgp3 from "../../../assets/bgProjects/bgp3.gif";
 import bgp4 from "../../../assets/bgProjects/bgp4.gif";
 import bgp5 from "../../../assets/bgProjects/bgp5.gif";
 import bgp6 from "../../../assets/bgProjects/bgp6.gif";
+import { TitleSection } from "components/molecules/title_section";
 
 const Projects = () => {
   return (
     <>
+      <TitleSection title="Projetos" />
       <ContainerProjects className="col-12 col-lg-12">
         <div className="row">
           <ContainerEachProject className="col-12 col-lg-6">
