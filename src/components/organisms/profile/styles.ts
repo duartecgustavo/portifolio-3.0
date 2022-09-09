@@ -5,9 +5,6 @@ import { ReactComponent as IconGithub } from "assets/icons/icon_github.svg";
 import { ReactComponent as IconLinkedin } from "assets/icons/icon_linkedin.svg";
 import me from "../../../assets/Me.png";
 
-import { Pallete } from "components/utils/colors/colors";
-const colors = Pallete();
-
 export const ContainerPicture = styled.div`
   position: relative;
 `;
@@ -24,8 +21,8 @@ export const TextImageDark = styled.h1`
   font-size: 50px;
   font-weight: bold;
   text-align: end;
-  color: ${colors.dm_gray};
-  text-shadow: 2px 2px 2px ${colors.dm_purple};
+  color: ${(props) => props.theme.colors.gray};
+  text-shadow: 2px 2px 2px ${(props) => props.theme.colors.purple};
 `;
 export const TextImageWhite = styled.h1`
   position: absolute;
@@ -35,8 +32,8 @@ export const TextImageWhite = styled.h1`
   font-size: 50px;
   font-weight: bold;
   text-align: end;
-  color: ${colors.dm_purple};
-  text-shadow: 2px 2px 2px ${colors.dm_black};
+  color: ${(props) => props.theme.colors.purple};
+  text-shadow: 2px 2px 2px ${(props) => props.theme.colors.black};
 `;
 
 export const ImageMe = styled.img.attrs({
@@ -49,37 +46,37 @@ export const ImageMe = styled.img.attrs({
 export const Github = styled(IconGithub)`
   width: 30px;
   height: 30px;
-  color: ${colors.dm_black};
+  color: ${(props) => props.theme.colors.black};
   &:hover {
-    color: ${colors.dm_purple};
-    stroke: 2px 2px ${colors.dm_white};
+    color: ${(props) => props.theme.colors.purple};
+    stroke: 2px 2px ${(props) => props.theme.colors.white};
   }
 `;
 
 export const Linkedin = styled(IconLinkedin)`
   width: 30px;
   height: 30px;
-  color: ${colors.dm_black};
+  color: ${(props) => props.theme.colors.black};
   &:hover {
-    color: ${colors.dm_purple};
-    stroke: 2px 2px ${colors.dm_white};
+    color: ${(props) => props.theme.colors.purple};
+    stroke: 2px 2px ${(props) => props.theme.colors.white};
   }
 `;
 export const Email = styled(IconEmail)`
   width: 30px;
   height: 30px;
-  color: ${colors.dm_black};
+  color: ${(props) => props.theme.colors.black};
   &:hover {
-    color: ${colors.dm_purple};
-    stroke: 2px 2px ${colors.dm_purple};
+    color: ${(props) => props.theme.colors.purple};
+    stroke: 2px 2px ${(props) => props.theme.colors.purple};
   }
 `;
 export const Download = styled(IconDownload)`
   width: 30px;
   height: 30px;
-  color: ${colors.dm_black};
+  color: ${(props) => props.theme.colors.black};
   &:hover {
-    color: ${colors.dm_purple};
-    stroke: 2px 2px ${colors.dm_purple};
+    color: ${(props) => props.theme.colors.purple};
+    stroke: 2px 2px ${(props) => props.theme.colors.purple};
   }
 `;

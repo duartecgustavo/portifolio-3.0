@@ -1,5 +1,5 @@
 import React from "react";
-import { Pallete } from "components/utils/colors/colors";
+import { Pallete } from "styles/colors/colors";
 import { ContainerSkill, TextSkill, SubTextSkill } from "./styles";
 const colors = Pallete();
 

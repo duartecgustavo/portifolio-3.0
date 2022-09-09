@@ -11,23 +11,6 @@
 }
 /* FIM CONFIGURAÇÕES GLOBAIS */
 
-/* INICIO SCROOLBAR */
-body::-webkit-scrollbar {
-  /* background-color: #7d50f9; */
-  background-color: #000000;
-  width: 8px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #818181;
-  border-radius: 5px;
-}
-
-body::-webkit-scrollbar-track {
-  border-radius: 5px;
-}
-/* FIM SCROOLBAR */
-
 /* INICIO ESTILO CARD PROJETO */
 .item-zoom {
   position: relative;
@@ -74,9 +57,3 @@ body::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.5);
 }
 /* FIM ESTILO CARD PROJETO */
-
-.scroll-active {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: background-color 0.2s;
-}

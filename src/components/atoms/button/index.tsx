@@ -1,20 +1,21 @@
 import React from "react";
-import { ContainerButton, SetaBaixo } from "./styles";
+import { BoxButton, SetaBaixo } from "./styles";
 
 interface IButton {
   text?: string;
+  onClick?: any;
 }
 
-const Button = ({ text }: IButton) => {
+const Button = ({ text, onClick }: IButton) => {
   return (
     <>
       {text == "CURRICULO" ? (
-        <ContainerButton>
+        <BoxButton onClick={onClick}>
           {text}
           <SetaBaixo />
-        </ContainerButton>
+        </BoxButton>
       ) : (
-        <ContainerButton>{text}</ContainerButton>
+        <BoxButton onClick={onClick}>{text}</BoxButton>
       )}
     </>
   );

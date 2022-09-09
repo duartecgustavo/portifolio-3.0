@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import { ReactComponent as exclamation } from "../../../assets/icons/icon_exclamation.svg";
-import { Pallete } from "components/utils/colors/colors";
-const colors = Pallete();
 
 export const Container = styled.div`
   display: flex;
@@ -26,7 +24,7 @@ export const ContainerBoxs = styled.div`
 
 export const TitleAbility = styled.h3`
   display: flex;
-  color: ${colors.dm_purple};
+  color: ${(props) => props.theme.colors.purple};
   font-weight: 300;
   justify-content: flex-start;
 `;
@@ -34,7 +32,7 @@ export const TitleAbility = styled.h3`
 export const LineAbility = styled.div`
   height: 5px;
   width: 100%;
-  background: ${colors.dm_purple};
+  background: ${(props) => props.theme.colors.purple};
   display: block;
   margin-top: 5px;
 `;

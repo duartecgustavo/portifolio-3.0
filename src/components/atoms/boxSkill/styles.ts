@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { Pallete } from "components/utils/colors/colors";
-const colors = Pallete();
 
 export const ContainerSkill = styled.div`
   padding: 10px 15px;
@@ -14,5 +12,5 @@ export const TextSkill = styled.p`
 export const SubTextSkill = styled.p`
   font-size: 10px;
   font-weight: 300;
-  color: ${colors.dm_default};
+  color: ${(props) => props.theme.colors.default};
 `;

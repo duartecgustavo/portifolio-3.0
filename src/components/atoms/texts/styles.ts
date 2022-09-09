@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { Pallete } from "components/utils/colors/colors";
-const colors = Pallete();
 
 interface ITextProps {
   width?: string;
@@ -18,13 +16,14 @@ export const TextPurple = styled.p<ITextProps>`
   font-size: ${(props) => (props.fontSize ? props.fontSize : "16px")};
   line-height: ${(props) => (props.lineHeight ? props.lineHeight : "normal")};
 
-  color: ${(props) => (props.color ? props.color : colors.dm_purple)};
+  color: ${(props) =>
+    props.color ? props.color : (props) => props.theme.colors.purple};
   background: none;
   border: none;
 
   position: relative;
   &.hover:hover {
-    color: ${colors.dm_purple2};
+    color: ${(props) => props.theme.colors.purple2};
   }
 `;
 
@@ -35,6 +34,7 @@ export const TextMain = styled.p<ITextProps>`
   text-align: justify;
 
   display: flex;
-  color: ${(props) => (props.color ? props.color : colors.dm_gray)};
+  color: ${(props) =>
+    props.color ? props.color : (props) => props.theme.colors.gray};
   background: none;
 `;

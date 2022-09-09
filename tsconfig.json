@@ -17,5 +17,5 @@
     "baseUrl": "src"
   },
   "include": ["src"],
-  "files": ["custom.d.ts"]
+  "files": ["custom.d.ts", "src/styles/styled.d.ts"]
 }

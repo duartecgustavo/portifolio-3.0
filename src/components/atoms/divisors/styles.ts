@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { Pallete } from "components/utils/colors/colors";
-const colors = Pallete();
 
 interface IDivisoeProps {
   width?: string;
@@ -13,12 +11,12 @@ interface IDivisoeProps {
 export const VerticalDivisor = styled.div<IDivisoeProps>`
   height: 35px;
   width: 2px;
-  background: ${colors.dm_purple};
+  background: ${(props) => props.theme.colors.purple};
 `;
 
 export const HorizontalDivisor = styled.div<IDivisoeProps>`
   background: ${(props) =>
-    props.background ? props.background : colors.dm_purple};
+    props.background ? props.background : (props) => props.theme.colors.purple};
   height: 6px;
   width: 20%;
   border-radius: 4px;
