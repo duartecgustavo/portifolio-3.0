@@ -1,6 +1,9 @@
 {
   "name": "portifolio-3.0",
   "version": "0.1.0",
+  "engines": {
+    "npm": "8.1.2"
+  },
   "private": true,
   "dependencies": {
     "@react-spring/types": "^9.4.4",
