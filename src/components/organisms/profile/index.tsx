@@ -12,7 +12,7 @@ import {
   TextImageDark,
   TextImageWhite,
 } from "./styles";
-import CvPdf from "../../../files/CV_Gustavo_Castanho_Duarte.pdf";
+import CvPdf from "../../../files/curriculo_gustavo_duarte_dev_full_stack .pdf";
 
 const Profile = () => {
   return (
@@ -21,11 +21,11 @@ const Profile = () => {
         <ContainerPicture className="col-12 col-lg-5">
           <ImageMe />
           <TextImageWhite>
-            DEV.
+            Dev.
             <br />
-            WEB
+            Full
             <br />
-            FRONTEND
+            Stack
           </TextImageWhite>
         </ContainerPicture>
         <ContainerInfos className="col-12 col-lg-6">
@@ -39,20 +39,20 @@ const Profile = () => {
                 width="80%"
                 className="d-flex justify-content-end fs-3"
               >
-                Hey, sou o Gustavo Castanho
+                Hey, sou o Gustavo Duarte
               </TextPurple>
             </div>
             <div className="d-flex gap-2 align-items-center justify-content-end">
               <TextMain fontSize="20px" lineHeight="30px">
-                Frontend Developer
+                Full Stack Developer
               </TextMain>
             </div>
             <div>
               <TextMain fontSize="20px" className="mt-3 mb-4" lineHeight="30px">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-                delectus nihil! Ipsam nemo ipsa molestias ad ducimus illum.
-                Perspiciatis iusto beatae vitae nobis quibusdam eveniet
-                necessitatibus officiis id maxime minima!
+                Desenvolvedor de Software Pleno com 4 anos de experiência, atuei
+                em grandes projetos nas áreas da saúde e financeira. Colaborando
+                em equipes multidisciplinares na entrega de sistemas robustos e
+                alinhados às necessidades do negócio.
               </TextMain>
             </div>
             <div className="d-flex justify-content-between align-items-center">

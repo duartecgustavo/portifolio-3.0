@@ -17,7 +17,8 @@ export const BoxProject = styled.div<IBoxProject>`
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  padding: 10px 0px;
+  padding: 0px;
+  margin: 20px 0px;
   padding-left: ${(props) => props.paddingLeft};
   padding-right: ${(props) => props.paddingRight};
 

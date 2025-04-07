@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const ContainerSkill = styled.div`
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   padding: 10px 15px;
   border: 1.2px solid ${(props) => props.color};
 `;

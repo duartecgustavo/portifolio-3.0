@@ -26,12 +26,12 @@ export const TextImageDark = styled.h1`
 `;
 export const TextImageWhite = styled.h1`
   position: absolute;
-  bottom: -20px;
-  right: -20px;
+  top: -15px;
+  left: 15px;  
 
   font-size: 50px;
   font-weight: bold;
-  text-align: end;
+  text-align: start;
   color: ${(props) => props.theme.colors.purple};
   text-shadow: 2px 2px 2px ${(props) => props.theme.colors.black};
 `;

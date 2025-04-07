@@ -1,11 +1,15 @@
 import React from "react";
 import { IconBackToTop, Container } from "./styles";
 
-export const BackToTop = () => {
+interface IBackToTop {
+  linkPage?: string;
+}
+
+export const BackToTop = ({ linkPage = "#link-top" }: IBackToTop) => {
   return (
     <>
       <Container>
-        <a href="#link-top">
+        <a href={linkPage}>
           <IconBackToTop />
         </a>
       </Container>

@@ -12,7 +12,8 @@ export const DrawerContainer = styled.div<IDrawer>`
   z-index: 25;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   height: 100%;
   width: 100%;
@@ -59,9 +60,5 @@ export const HeaderDrawer = styled.div`
 export const Close = styled(IconClose)`
   width: 28px;
   height: 28px;
-  color: ${(props) => props.theme.colors.black};
-  /* &:hover {
-    color: ${(props) => props.theme.colors.purple};
-    stroke: 2px 2px ${(props) => props.theme.colors.purple};
-  } */
+  color: ${(props) => props.theme.colors.gray};
 `;

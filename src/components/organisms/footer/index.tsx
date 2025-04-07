@@ -1,7 +1,6 @@
-import React from "react";
-import { ContainerFooter, Beam } from "./styles";
 import { TextMain } from "components/atoms/texts/styles";
 import { Pallete } from "styles/colors/colors";
+import { Beam, ContainerFooter } from "./styles";
 const colors = Pallete();
 
 const Footer = () => {

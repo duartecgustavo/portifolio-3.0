@@ -6,9 +6,10 @@ export const ContainerFooter = styled.div`
   align-items: center;
   width: 100%;
   height: 60px;
-
+  
   gap: 4px;
-  background: ${(props) => props.theme.colors.footer};
+  background: red;
+  /* background: ${(props) => props.theme.colors.footer}; */
 `;
 
 export const Beam = styled.div`

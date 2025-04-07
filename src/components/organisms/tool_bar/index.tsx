@@ -2,7 +2,7 @@ import React from "react";
 import { Container, BackContainer } from "./styles";
 import { ChangeLanguage, DarkMode } from "./styles";
 import Button from "../../atoms/button/index";
-import CvPdf from "../../../files/CV_Gustavo_Castanho_Duarte.pdf";
+import CvPdf from "../../../files/curriculo_gustavo_duarte_dev_full_stack .pdf";
 import { useDrawer } from "../../../hooks/store/useDrawer";
 
 interface IChangeTheme {

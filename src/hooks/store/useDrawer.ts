@@ -6,6 +6,7 @@ interface IUseDrawer {
 }
 
 export const useDrawer = create<IUseDrawer>((set) => ({
-  open: false,
+  open: true,
+  // open: false,
   setOpen: (open) => set({ open }),
 }));

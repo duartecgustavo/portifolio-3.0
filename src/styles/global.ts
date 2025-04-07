@@ -38,4 +38,24 @@ export default createGlobalStyle<IProps>`
   body::-webkit-scrollbar-track {
     border-radius: 5px;
   }
+
+  .accordion-button{
+    background-color:${(props) => props.theme.colors.color_bg1} !important;
+    border: none !important;
+    color: ${(props) => props.theme.colors.purple} !important;
+    :focus{
+      border: none !important;
+      box-shadow: none !important;
+    }
+    :not(.collapsed){
+      box-shadow: none !important;
+    }
+  }
+  
+  .accordion, .accordion-item{
+    background-color:${(props) => props.theme.colors.color_bg1} !important;
+    border: none !important;
+    border-radius: 8px;
+    color: ${(props) => props.theme.colors.gray} !important;
+  }
 `;
