@@ -32,22 +32,25 @@ const CardProject = ({
           id="container"
           style={{ backgroundColor: background }}
         >
-          <div className="item-zoom">
-            <div className="item-efeito" />
-            <div
-              style={{
-                flexDirection: "column",
-                display: "flex",
-                alignItems: "flex-start",
-                overflow: "hidden",
-                paddingInline: 30,
-              }}
-            >
+          <div className="item-zoom" style={{ backgroundColor: "#ffffff"}}>
+            <div className="item-efeito">
+              <h1
+                style={{ fontWeight: 700, fontSize: "4rem", color: "#ffffff" }}
+              >
+                ABRIR
+              </h1>
+            </div>
+            <div style={{ width: "100%", height: "100%" }}>
               <img
                 src={icon}
-                style={{ height: 100, width: 100, objectFit: "contain" }}
+                style={{
+                  backgroundImage: `url(${icon})`,
+                  backgroundSize: "contain",
+                  backgroundPosition: "center",
+                  height: "100%",
+                  width: "100%",
+                }}
               />
-              <h1 style={{ fontWeight: 700, fontSize: "4rem" }}>{name}</h1>
             </div>
           </div>
         </BoxProject>

@@ -2,14 +2,10 @@ import React from "react";
 import { ContainerProjects, ContainerEachProject } from "./styles";
 import CardProject from "components/molecules/card_project/index";
 import eduimpulso from "../../../assets/bgProjects/eduimpulso.svg";
-import guiaobstetrico from "../../../assets/bgProjects/guiaobstetrico.svg";
-import rapunzelsolidaria from "../../../assets/bgProjects/rapunzelsolidaria.svg";
+import guiaobstetrico from "../../../assets/bgProjects/guiaobstetrico.png";
+import mechasdobem from "../../../assets/bgProjects/mechasdobem.png";
 import natureai from "../../../assets/bgProjects/natureai.svg";
 import hq from "../../../assets/bgProjects/hq.png";
-import bgp2 from "../../../assets/bgProjects/bgp2.gif";
-import bgp3 from "../../../assets/bgProjects/bgp3.gif";
-import bgp4 from "../../../assets/bgProjects/bgp4.gif";
-import bgp5 from "../../../assets/bgProjects/bgp5.gif";
 import bgp6 from "../../../assets/bgProjects/bgp6.gif";
 import { TitleSection } from "components/molecules/title_section";
 
@@ -46,7 +42,7 @@ const Projects = () => {
             <CardProject
               height="300px"
               isDefault={false}
-              icon={rapunzelsolidaria}
+              icon={mechasdobem}
               name="RAPUNZEL SOLIDÁRIA"
               background="#A73AA7"
             />
